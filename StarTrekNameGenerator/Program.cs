@@ -17,6 +17,7 @@ namespace StarTrekNameGenerator
             List<string> femaleStart = new List<string>() {"P", "K", "Q" };
             List<string> femaleEnd = new List<string>() {"r", "j", "’p", "k", "l" };
             List<string> males = new List<string>();
+            List<string> females = new List<string>();
 
             Console.WriteLine("Vælg Køn: \n1: Male\n2: Female");
             string choice = Console.ReadLine().ToLower();
@@ -79,6 +80,7 @@ namespace StarTrekNameGenerator
                         {
                             string randomName = namePart2 + end;
                             Console.WriteLine(randomName);
+                            females.Add(randomName);
                         }
                     }
                 }
